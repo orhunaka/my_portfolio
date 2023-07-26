@@ -66,12 +66,14 @@
 .section-hero {
   background-color: #cee5de;
   margin: 0 2.4rem 0 2.4rem;
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 4.8rem 0 7.2rem 0;
   border-radius: 30px;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
   /* border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; */
+
+  margin-bottom: 4.8rem;
 }
 
 .hero {
@@ -131,26 +133,99 @@
 }
 
 /* ******************************** */
+/* FEATURED IN SECTION */
+/* ******************************** */
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.logos img {
+  height: 9.6rem;
+}
+
+/* ******************************** */
 /* ABOUT SECTION */
 /* ******************************** */
 
-.about {
+.section-projects {
+  padding: 9.6rem 0;
+}
+
+.project {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+
+  transition: all 0.4s;
+}
+
+.project:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.project-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.project-programming-languages {
+  margin-bottom: 1.2rem;
   display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
+  gap: 0.6rem;
 }
 
-.text-with-icon {
-  display: flex;
-  align-items: center;
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 600;
+  background-color: #066649;
 }
 
-.about-university-logo {
-  width: 24rem;
+/* .tag--html {
+  background-color: orangered;
 }
 
-.about-description {
+.tag--css {
+  background-color: blue;
+}
+
+.tag--javascript {
+  background-color: yellowgreen;
+} */
+
+.project-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-description {
   font-size: 1.8rem;
+  line-height: 1.6;
 }
