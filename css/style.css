@@ -124,6 +124,12 @@
   list-style: none;
   display: flex;
   gap: 2.4rem;
+
+  transition: all 0.4s;
+}
+
+.hero-social-link:hover {
+  transform: scale(1.2);
 }
 
 .hero-social-icon {
