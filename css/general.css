@@ -133,7 +133,8 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+  margin-bottom: 2.4rem;
 }
 
 .heading-tertiary {
@@ -251,6 +252,14 @@ body {
 }
 
 /* HELPER/SETTINGS CLASSES */
+
+.margin-top-sm {
+  margin-top: 1.6rem !important;
+}
+
+.margin-top-md {
+  margin-top: 4.8rem !important;
+}
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
