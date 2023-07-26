@@ -10,12 +10,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e6f2ef;
+  background-color: #cee5de;
 
   height: 9.6rem;
   padding: 0 4.8rem;
 
-  border-radius: 11px;
+  border-radius: 30px;
   /* position: relative; */
 }
 
@@ -46,5 +46,79 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
+  color: #066649;
+}
+
+/* ******************************** */
+/* MAIN SECTION */
+/* ******************************** */
+
+.main-container {
+  padding: 0 2.4rem 2.4rem 2.4rem;
+}
+
+/* ******************************** */
+/* HERO SECTION */
+/* ******************************** */
+
+.section-hero {
+  background-color: #cee5de;
+  padding: 4.8rem 0 9.6rem 0;
+  border-radius: 30px;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-image-box {
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+.hero-image-box img {
+  display: block;
+  width: 100%;
+
+  transition: all 0.4s;
+}
+
+.hero-image-box img:hover {
+  transform: scale(1.1);
+}
+
+.hero-text-box {
+  text-align: end;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-social-list {
+  display: flex;
+  justify-content: end;
+  /* justify-content: center; */
+  gap: 3.6rem;
+}
+
+.hero-social-link {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.hero-social-icon {
+  height: 3rem;
+  width: 3rem;
   color: #066649;
 }
