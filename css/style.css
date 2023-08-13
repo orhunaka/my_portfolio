@@ -15,9 +15,10 @@
   height: 9.6rem;
   padding: 0 4.8rem;
 
-  border-radius: 30px;
+  /* border-radius: 30px;
   border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px; */
+
   /* position: relative; */
 }
 
@@ -67,9 +68,9 @@
   background-color: #cee5de;
   margin: 0 2.4rem 0 2.4rem;
   padding: 4.8rem 0 7.2rem 0;
-  border-radius: 30px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
+  /* border-radius: 30px; */
+  /* border-top-right-radius: 0px; */
+  /* border-top-left-radius: 0px; */
   /* border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; */
 
@@ -88,7 +89,7 @@
 
 .hero-image-box {
   overflow: hidden;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 }
 
@@ -176,7 +177,7 @@
 
 .project {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
+  /* border-radius: 11px; */
   overflow: hidden;
 
   transition: all 0.4s;
@@ -205,20 +206,24 @@
   color: #fff;
   border-radius: 100px;
   font-weight: 600;
-  background-color: #066649;
+  /* background-color: #066649; */
 }
 
-/* .tag--html {
-  background-color: orangered;
+.tag--html {
+  background-color: #cc5f2d;
 }
 
 .tag--css {
-  background-color: blue;
+  background-color: #0077ff;
 }
 
 .tag--javascript {
-  background-color: yellowgreen;
-} */
+  background-color: #9acd32;
+}
+
+.tag--react {
+  background-color: #2ca750;
+}
 
 .project-title {
   font-size: 2.4rem;
@@ -229,6 +234,7 @@
 
 .project-img {
   width: 100%;
+  height: auto;
 }
 
 .project-description {
