@@ -15,9 +15,9 @@
   height: 9.6rem;
   padding: 0 4.8rem;
 
-  /* border-radius: 30px;
+  border-radius: 11px;
   border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px; */
+  border-bottom-left-radius: 0px;
 
   /* position: relative; */
 }
@@ -68,12 +68,11 @@
   background-color: #cee5de;
   margin: 0 2.4rem 0 2.4rem;
   padding: 4.8rem 0 7.2rem 0;
-  /* border-radius: 30px; */
-  /* border-top-right-radius: 0px; */
-  /* border-top-left-radius: 0px; */
+  border-radius: 11px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
   /* border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; */
-
   margin-bottom: 4.8rem;
 }
 
@@ -89,7 +88,7 @@
 
 .hero-image-box {
   overflow: hidden;
-  /* border-radius: 30px; */
+  border-radius: 30px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 }
 
@@ -193,9 +192,9 @@
 }
 
 .project-programming-languages {
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
   display: flex;
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 
 .tag {
@@ -240,4 +239,64 @@
 .project-description {
   font-size: 1.8rem;
   line-height: 1.6;
+}
+
+/* ******************************** */
+/* PROJECTS SECTION */
+/* ******************************** */
+
+.project-cards-l {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: #b9cec8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  margin-bottom: 4.8rem;
+  overflow: hidden;
+}
+
+.project-cards-r {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: #b9cec8;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  margin-bottom: 4.8rem;
+  overflow: hidden;
+}
+
+.project-cards-img-box {
+  background-size: cover;
+  background-position: center;
+}
+
+.pcib-first {
+  background-image: linear-gradient(to left bottom, #b9cec859, #b9cec859),
+    url("../img/project-images/travel-list.png");
+}
+
+.pcib-second {
+  background-image: linear-gradient(to left bottom, #a5b7b259, #a5b7b259),
+    url("../img/project-images/pizza-menu.png");
+}
+
+.pcib-third {
+  background-image: linear-gradient(to left bottom, #90a09b59, #90a09b59),
+    url("../img/project-images/profile-card.png");
+}
+
+.project-cards-text-box {
+  padding: 4.8rem 6.4rem 4.8rem 6.4rem;
+  color: #555;
+}
+
+.project-cards-img-box .heading-secondary {
+  color: #02261b;
+  margin-bottom: 3.2rem;
+}
+
+.project-cards-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
 }
