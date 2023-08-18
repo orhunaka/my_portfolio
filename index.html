@@ -32,26 +32,42 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <title>My Portfolio</title>
   </head>
   <body>
     <header class="header">
       <section class="section-header">
-        <a href="#">
+        <!-- <a href="#">
           <img class="logo" src="img/logo.png" alt="My Portfolio Logo" />
-        </a>
+        </a> -->
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#whoami">Me</a></li>
-            <li><a class="main-nav-link" href="#languages">Languages</a></li>
+            <!-- <li><a class="main-nav-link" href="#whoami">Me</a></li> -->
+            <!-- <li><a class="main-nav-link" href="#languages">Languages</a></li> -->
             <li><a class="main-nav-link" href="#projects">Projects</a></li>
-            <li><a class="main-nav-link" href="#hireme">Hire me</a></li>
+            <li>
+              <a class="main-nav-link" href="mailto:orhunaka@outlook.com"
+                >Hire me</a
+              >
+            </li>
             <li><a class="main-nav-link" href="#resume">Resume</a></li>
           </ul>
         </nav>
       </section>
     </header>
+
+    <!-- <button id="header" class="go-to-top">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button> -->
 
     <main>
       <section class="section-hero">
@@ -113,9 +129,126 @@
         </div>
       </section>
 
-      <!-- <section class="section-featured">
+      <section id="projects" class="section-projects">
         <div class="container">
-          <h2 class="heading-featured-in">Languages I Know</h2>
+          <span class="subheading">Live</span>
+          <h2 class="heading-secondary projects-title">Projects</h2>
+        </div>
+
+        <div class="container">
+          <a href="https://omnifood-orhun.netlify.com/" target="_blank">
+            <div class="project-cards-r">
+              <div class="project-cards-text-box">
+                <h2 class="heading-secondary">Omnifood</h2>
+                <p class="project-cards-text">
+                  My biggest project! Did it with only HTML and CSS. It is a
+                  project where you create a website for a food company that
+                  cooks and delivers different types of meals for their
+                  customers. Learned more about the different CSS rules and
+                  syntax.
+                </p>
+                <div class="project-programming-languages">
+                  <span class="tag tag--html">HTMl</span>
+                  <span class="tag tag--css">CSS</span>
+                </div>
+              </div>
+              <div
+                class="project-cards-img-box pcib-first"
+                role="img"
+                aria-label="Travel List ReactApp"
+              ></div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/orhunaka/react-travel-list"
+            target="_blank"
+          >
+            <div class="project-cards-l">
+              <div
+                class="project-cards-img-box pcib-second"
+                role="img"
+                aria-label="Travel List ReactApp"
+              ></div>
+              <div class="project-cards-text-box">
+                <h2 class="heading-secondary">Travel List</h2>
+                <p class="project-cards-text">
+                  A travel list application where you can use on days where you
+                  are traveling to somewhere abroad. With this app, you can keep
+                  track of what you added to your luggage. Learned more about
+                  using different functions, methodologies and useStates.
+                </p>
+                <div class="project-programming-languages">
+                  <span class="tag tag--react">React</span>
+                  <span class="tag tag--css">CSS</span>
+                  <span class="tag tag--html">HTMl</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/orhunaka/react-pizza-time"
+            target="_blank"
+          >
+            <div class="project-cards-r">
+              <div class="project-cards-text-box">
+                <h2 class="heading-secondary">Pizza Menu</h2>
+                <p class="project-cards-text">
+                  Do you need a static menu where a customer can order your
+                  delicious food in your restaurant? Well, this is the solution.
+                  A menu application where you can choose a food from different
+                  menu items. One of the first react applications I did to learn
+                  how to re-use objects.
+                </p>
+                <div class="project-programming-languages">
+                  <span class="tag tag--react">React</span>
+                  <span class="tag tag--css">CSS</span>
+                  <span class="tag tag--html">HTMl</span>
+                </div>
+              </div>
+              <div
+                class="project-cards-img-box pcib-third"
+                role="img"
+                aria-label="Travel List ReactApp"
+              ></div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/orhunaka/react-profile-card"
+            target="_blank"
+          >
+            <div class="project-cards-l">
+              <div
+                class="project-cards-img-box pcib-forth"
+                role="img"
+                aria-label="Travel List ReactApp"
+              ></div>
+              <div class="project-cards-text-box">
+                <h2 class="heading-secondary">Profile Card</h2>
+                <p class="project-cards-text">
+                  A simple profile card application where you can see the
+                  different skill levels I have on different programming
+                  languages. This was my first react application, which in my
+                  eyes, was a huge success.
+                </p>
+                <div class="project-programming-languages">
+                  <span class="tag tag--html">HTMl</span>
+                  <span class="tag tag--css">CSS</span>
+                  <span class="tag tag--react">React</span>
+                  <span class="tag tag--javascript">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- <section class="section-projects">
+        <div class="container">
+          <span class="subheading">Programming Languages</span>
+          <h2 class="heading-secondary">I Know</h2>
           <div class="logos">
             <img src="img/logos/html.png" alt="HTML logo" />
             <img src="img/logos/css.png" alt="CSS Insider logo" />
@@ -124,152 +257,66 @@
           </div>
         </div>
       </section> -->
-
-      <section class="section-projects">
-        <div class="container">
-          <span class="subheading">Live</span>
-          <h2 class="heading-secondary projects-title">Projects</h2>
-        </div>
-
-        <!-- <div class="container grid grid--2-cols margin-bottom-md">
-          <div class="project">
-            <img
-              class="project-img"
-              src="img/project-images/react-pizza-menu.png"
-              alt="React Pizza Menu Project"
-            />
-            <div class="project-content">
-              <div class="project-programming-languages">
-                <span class="tag tag--html">HTMl</span>
-                <span class="tag tag--css">CSS</span>
-                <span class="tag tag--react">React</span>
-                <span class="tag tag--javascript">JavaScript</span>
-              </div>
-
-              <p class="project-title">React Pizza Menu</p>
-              <p class="project-description">
-                A really basic pizza menu that is made with React.
-              </p>
-            </div>
-          </div>
-
-          <div class="project">
-            <img
-              class="project-img"
-              src="img/project-images/profile-card.png"
-              alt="Profile Card Project"
-            />
-            <div class="project-content">
-              <div class="project-programming-languages">
-                <span class="tag tag--html">HTMl</span>
-                <span class="tag tag--css">CSS</span>
-                <span class="tag tag--react">React</span>
-              </div>
-
-              <p class="project-title">Profile Card</p>
-              <p class="project-description">
-                A simple React App that has my profile card. All was made in
-                index.js, so it was a really basic project.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container grid grid--3-cols margin-bottom-md">
-          <div class="project">
-            <img
-              class="project-img"
-              src="img/project-images/omnifood.png"
-              alt="Omnifood Project"
-            />
-            <div class="project-content">
-              <div class="project-programming-languages">
-                <span class="tag tag--html">HTMl</span>
-                <span class="tag tag--css">CSS</span>
-                <span class="tag tag--javascript">JavaScript</span>
-              </div>
-
-              <p class="project-title">Omnifood</p>
-              <p class="project-description">
-                A project that holds your hand from the beginning and takes you
-                all the way up in your HTML and CSS journey. Made from using the
-                tutorial from Jonas Schmedtmann.
-              </p>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="container">
-          <div class="project-cards-l">
-            <div
-              class="project-cards-img-box pcib-first"
-              role="img"
-              aria-label="Travel List ReactApp"
-            ></div>
-            <div class="project-cards-text-box">
-              <h2 class="heading-secondary">React Travel List</h2>
-              <p class="project-cards-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                neque adipisci est, repellat architecto placeat quod, mollitia
-                voluptates, laborum eveniet dolores. Quis provident libero
-                reprehenderit assumenda totam atque esse consequuntur!
-              </p>
-              <div class="project-programming-languages">
-                <span class="tag tag--html">HTMl</span>
-                <span class="tag tag--css">CSS</span>
-                <span class="tag tag--react">React</span>
-                <span class="tag tag--javascript">JavaScript</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-cards-r">
-            <div class="project-cards-text-box">
-              <h2 class="heading-secondary">React Pizza Menu</h2>
-              <p class="project-cards-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                neque adipisci est, repellat architecto placeat quod, mollitia
-                voluptates, laborum eveniet dolores. Quis provident libero
-                reprehenderit assumenda totam atque esse consequuntur!
-              </p>
-              <div class="project-programming-languages">
-                <span class="tag tag--html">HTMl</span>
-                <span class="tag tag--css">CSS</span>
-                <span class="tag tag--react">React</span>
-                <span class="tag tag--javascript">JavaScript</span>
-              </div>
-            </div>
-            <div
-              class="project-cards-img-box pcib-second"
-              role="img"
-              aria-label="Travel List ReactApp"
-            ></div>
-          </div>
-
-          <div class="project-cards-l">
-            <div
-              class="project-cards-img-box pcib-third"
-              role="img"
-              aria-label="Travel List ReactApp"
-            ></div>
-            <div class="project-cards-text-box">
-              <h2 class="heading-secondary">React Profile Card</h2>
-              <p class="project-cards-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                neque adipisci est, repellat architecto placeat quod, mollitia
-                voluptates, laborum eveniet dolores. Quis provident libero
-                reprehenderit assumenda totam atque esse consequuntur!
-              </p>
-              <div class="project-programming-languages">
-                <span class="tag tag--html">HTMl</span>
-                <span class="tag tag--css">CSS</span>
-                <span class="tag tag--react">React</span>
-                <span class="tag tag--javascript">JavaScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <ul class="footer-social-links">
+            <li class="hero-social-link">
+              <a
+                class="hero-social-icon-link"
+                href="https://github.com/orhunaka"
+                target="_blank"
+              >
+                <ion-icon
+                  class="hero-social-icon"
+                  name="logo-github"
+                ></ion-icon>
+              </a>
+            </li>
+            <li class="hero-social-link">
+              <a
+                class="hero-social-icon-link"
+                href="https://www.facebook.com/orhunaka"
+                target="_blank"
+              >
+                <ion-icon
+                  class="hero-social-icon"
+                  name="logo-facebook"
+                ></ion-icon>
+              </a>
+            </li>
+            <li class="hero-social-link">
+              <a
+                class="hero-social-icon-link"
+                href="https://www.instagram.com/akaorhunn/"
+                target="_blank"
+              >
+                <ion-icon
+                  class="hero-social-icon"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; 2023 by Orhun. All Rights reserved.
+          </p>
+        </div>
+
+        <div class="links-col">
+          <ul class="footer-nav-list">
+            <li><a class="footer-nav-link" href="#projects">Projects</a></li>
+            <li>
+              <a class="footer-nav-link" href="mailto:orhunaka@outlook.com"
+                >Hire me</a
+              >
+            </li>
+            <li><a class="footer-nav-link" href="#resume">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

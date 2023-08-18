@@ -27,9 +27,9 @@
 
   - Primary: #087f5b
 
-  - Tints: #e6f2ef #cee5de #b5d9ce #218c6b
+  - Tints: #218c6b #39997c #52a58c #6bb29d #84bfad #9cccbd #b5d9ce #cee5de
 
-  - Shades: #077252 #066649 #02261b
+  - Shades: #077252 #066649 #065940 #054c37 #04402e #033324 #02261b
 
   - Accents: 
 
@@ -71,6 +71,20 @@ body {
   color: #555;
 
   /* overflow-x: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.go-to-top {
+  position: fixed;
+  height: 6.4rem;
+  width: 6.4rem;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  color: #087f5b;
+  font-size: 2.4rem;
 }
 
 /* ******************************** */
@@ -116,6 +130,11 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.grid--footer {
+  grid-template-columns: repeat(2, 1fr);
+  height: 12.8rem;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -137,8 +156,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  /* margin-bottom: 9.6rem; */
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 
 .heading-tertiary {
