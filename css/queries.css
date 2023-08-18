@@ -162,6 +162,19 @@
       grid-template-rows: 1fr 2fr;
     }
 
+    .edu-exp-row {
+      grid-template-columns: 1fr;
+    }
+
+    .edu-exp-col:nth-child(2) {
+      margin-top: 3.6rem;
+    }
+
+    .edu-exp-box::before {
+      right: calc(100% + 2.35rem);
+      top: -2rem;
+    }
+
     .copyright {
       font-size: 1.4rem;
     }

@@ -142,28 +142,26 @@
 /* FEATURED IN SECTION */
 /* ******************************** */
 
-.section-featured {
-  padding: 4.8rem 0 3.2rem 0;
+.feature-icon {
+  color: #066649;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
 }
 
-/* .heading-featured-in {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 2.4rem;
-  color: #888;
-} */
-
-.logos {
-  display: flex;
-  justify-content: space-between;
-  /* gap: 3.2rem; */
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
 }
 
-.logos img {
-  height: 9.6rem;
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 /* ******************************** */
@@ -291,7 +289,72 @@
 }
 
 /* ******************************** */
-/* ABOUT SECTION */
+/* EXPERIENCE SECTION */
+/* ******************************** */
+.edu-exp-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+
+.edu-exp-title .heading-tertiary {
+  color: #087f5b;
+  padding: 0 0 0.2rem 0.3rem;
+}
+
+.edu-exp-contents {
+  padding: 1.6rem 3.2rem;
+  border-left: 0.2rem solid #087f5b;
+}
+
+.edu-exp-box {
+  position: relative;
+  padding: 2rem;
+  border: 0.1rem solid #eeeeee;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 11px;
+  transition: all 0.4s;
+  margin-bottom: 2rem;
+}
+
+.edu-exp-box:hover {
+  box-shadow: 0 0.3rem 1.2rem 0 #ccc;
+  border: 0.1rem solid transparent;
+}
+
+.edu-exp-box::before {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  right: calc(100% + 2.35rem);
+  top: -0.5rem;
+  background-color: #cee5de;
+  border: 0.2rem solid white;
+}
+
+.edu-exp-year {
+  position: relative;
+  color: #087f5b;
+  font-size: 1.2rem;
+}
+
+.edu-exp-cont-title {
+  font-size: 1.6rem;
+  padding: 1rem 0 0.6rem;
+  color: #087f5b;
+}
+
+.which-edu-exp {
+  line-height: 1.6;
+  color: #666;
+  font-size: 2rem;
+}
+
+/* ******************************** */
+/* FOOTER SECTION */
 /* ******************************** */
 .footer {
   padding: 12.8rem 0;
